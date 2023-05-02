@@ -1,0 +1,31 @@
+<h1>THIS IS THE INDEX</h1>
+<table>
+<head>
+<tr>
+    <th>NAME</th>
+    <th>ID_CARD</th>
+    <th>ADDRESS</th>
+    <th>VOTE_NO</th>
+</tr>
+</head>
+<body>
+<% @voters.each do |i|%>
+<tr>
+      <td><%= i.name%></td>
+      <td><%= i.id_card%></td>
+      <td><%= i.address%></td>
+      <td><%= i.voter_number%></td>
+      <td><%= link_to 'Delete', voter_path(i), data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+</td>
+        
+        <td><%=link_to "show", voter_path(i) %></td>
+        <td><%= link_to "edit", edit_voter_path(i) %></td>
+</tr>
+<% end %>
+
+
+
+</body>
+
+</table>
+ <%= link_to "new", new_voter_path %>

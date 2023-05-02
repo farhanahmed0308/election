@@ -1,0 +1,29 @@
+
+
+<%= form_with model: voter do |i|%>
+
+<div>
+<%= i.label :name%>
+<%= i.text_field :name%>
+</div>
+
+<div>
+<%= i.label :id_card%>
+<%= i.text_field :id_card%>
+</div>
+<div>
+<%= i.label :address%>
+<%= i.text_field :address%>
+</div>
+<div>
+<%= i.label :voter_number%>
+<%= i.text_field :voter_number%>
+</div>
+<div>
+<%= i.submit%>
+
+</div>
+
+<div>
+<% end %>
+</div>
