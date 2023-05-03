@@ -10,11 +10,13 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column">
   <%= render "layouts/navbar"%>
   <% flash.each do |msg, text|%>
   <%= text %>
   <% end %>
+ 
     <%= yield %>
+  
   </body>
 </html>

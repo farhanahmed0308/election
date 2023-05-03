@@ -1,2 +1,62 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+.navbar {
+    background-color: black !important;
+}
+.nav-link { 
+    color: white !important;
+}   
+#logo{
+    color: white !important;
+}
+#home-top-margin{
+    margin-top: 20px !important;
+    margin-left: 140px !important;
+}
+.jumbotron {
+    background-image: url(pic.png);
+    width: 15OOpx;
+    height: 486px;
+    background-position: center cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#onetwothree {
+    background-image: url(canva2.png);
+    width: 1500px;
+    height: 630px;
+    background-position: center cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      
+}
+#canva-about {
+    background-image: url(canva3.jpg);
+    width: 15OOpx;
+    height: 486px;
+    background-position: center cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: gray;
+}
+
+
+/* Other Classes for Page Styling */
+

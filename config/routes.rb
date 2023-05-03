@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :voters
   get "about", to: "pages#about"
+  get "assembly", to: "pages#assembly"
   root "pages#home"
 end
