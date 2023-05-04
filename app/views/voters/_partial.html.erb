@@ -3,24 +3,24 @@
 <%= form_with model: voter do |i|%>
 
 <div>
-<%= i.label :name%>
-<%= i.text_field :name%>
+<%= i.label :Name%>
+<%= i.text_field :name, placeholder: "enter your name"%>
 </div>
 
 <div>
 <%= i.label :id_card%>
-<%= i.text_field :id_card%>
+<%= i.text_field :id_card, placeholder: "CNIC"%>
 </div>
 <div>
-<%= i.label :address%>
-<%= i.text_field :address%>
+<%= i.label :Address%>
+<%= i.text_field :address, placeholder: "enter yout address"%>
 </div>
 <div>
 <%= i.label :voter_number%>
-<%= i.text_field :voter_number%>
+<%= i.text_field :voter_number, placeholder: "enter your vote number"%>
 </div>
 <div>
-<%= i.submit%>
+<%= i.submit %>
 
 </div>
 

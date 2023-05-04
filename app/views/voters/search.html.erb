@@ -1,0 +1,15 @@
+<div class = "container fluid">
+<% if @voters.any? %>
+  <% @voters.each do |voter| %>
+    <div>
+      <h3><%= voter.name %></h3>
+      <p><strong>ID Card:</strong> <%= voter.id_card %></p>
+      <p><strong>Address: </strong><%= voter.address %></p>
+      <p><strong>Voter Number: </strong><%= voter.voter_number %></p>
+    </div>
+  <% end %>
+<% else %>
+  <p>No matching voters found.</p>
+<% end %>
+</div>
+

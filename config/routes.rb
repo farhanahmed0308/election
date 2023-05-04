@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :voters
   get "about", to: "pages#about"
   get "assembly", to: "pages#assembly"
+  get 'search', to: 'voters#search', as: 'search_voters'
   root "pages#home"
 end

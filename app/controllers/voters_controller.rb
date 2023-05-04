@@ -1,6 +1,15 @@
 class VotersController < ApplicationController
+   
+    def search
+        @voters = Voter.where(id_card: params[:id_card])
+
+    end
+
     def show
+
         @voter = Voter.find(params[:id])
+
+
     end
     def index
         @voters = Voter.all
