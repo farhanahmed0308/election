@@ -1,4 +1,5 @@
 class Voter < ApplicationRecord
-    validates :name, presence: true
-    validates :id_card, uniqueness: { case_sensitive: false }
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  
 end

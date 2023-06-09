@@ -33,16 +33,31 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
+
+            <form class="d-flex" action="/search" method="get">
+              <div class="form-group">
+              <input type="text" class="form-control me-2" placeholder="Search by ID card" name="id_card">
+              </div>
+              <button type="submit" class="btn btn-outline-success">Search</button>
+            </form>
+        
+
           </ul>
+          <li class="nav-item btn btn-outline-success">
+            <!-- link to the sign_up -->
+            <%= link_to new_login_registration_path do%>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sign up</a>
+            <% end %>
+          </li>
+
+          <li class="nav-item btn btn-outline-success" style="margin-left: 10px">
+            
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">login</a>
+          </li>
          
 
 
-          <form class="d-flex" action="/search" method="get">
-                  <div class="form-group">
-                  <input type="text" class="form-control me-2" placeholder="Search by ID card" name="id_card">
-                  </div>
-                  <button type="submit" class="btn btn-outline-success">Search</button>
-          </form>
+        
 
         </div>
       </div>

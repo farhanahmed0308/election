@@ -45,25 +45,63 @@
       
 }
 #canva-about {
-    background-image: url(canva3.jpg);
-    width: 15OOpx;
-    height: 486px;
-    background-position: center cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Faisal_Mosque%2C_Islamabad%2C_Pakistan.jpg/1920px-Faisal_Mosque%2C_Islamabad%2C_Pakistan.jpg);
+    // width: 15OOpx;
+    // height: 486px;
+    // background-position: center cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
 }
-
 
 html,
 body {
   height: 100%;
 }
 
-#page-content {
+#page-carousel {
   flex: 1 0 auto;
   background-color: gray;
 }
+.form-style {
+    border-radius: 60px;
+}
+
+#topbottomset{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+#carousel-text{
+    color: black;
+    margin-left: 20px;
+
+}
+.hover-effect:hover{
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#head{
+    text-align: center;
+    color: grey;
+    background-color: antiquewhite;
+    display: inline;
+
+}
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// #page-carousel{
+//   flex: 1 0 auto;
+//   background-color: gray;
+// }
+// .form-style{
+//     border-radius: 60px;
+// }
 
 
 /* Other Classes for Page Styling */

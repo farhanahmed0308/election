@@ -5,4 +5,11 @@ class PagesController < ApplicationController
     end
     def assembly
     end
+    def login 
+    end
+    def sign_up 
+    end
+    def candidate 
+        
+    end   
 end

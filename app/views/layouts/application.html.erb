@@ -16,6 +16,25 @@
   <%= text %>
   <% end %>
  
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <% if login_signed_in? %>
+  <!-- Show user-specific navbar options if logged in -->
+  <li class="nav-item">
+    <%= link_to "Logout", destroy_login_session_path, method: :delete, class: "nav-link" %>
+  </li>
+<% else %>
+  <!-- Show sign-up and login buttons if not logged in -->
+  <li class="nav-item">
+    <%= link_to "Sign up", new_login_registration_path, class: "nav-link" %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Login", new_login_session_path, class: "nav-link" %>
+  </li>
+<% end %>
+
+
     <%= yield %>
   
 
